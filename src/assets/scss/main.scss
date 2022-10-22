@@ -1,0 +1,15 @@
+
+
+//Include the Variables to the main file
+@import "./abstracts/variables";
+// Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "~bootstrap/scss/functions";
+//Include remainder of required Bootstrap stylesheets
+@import "~bootstrap/scss/variables";
+//Include remainder of required parts
+@import "~bootstrap/scss/mixins";
+
+// include the typography to the main file 
+@import "./abstracts/typography";
+
+@import "~bootstrap/scss/bootstrap";

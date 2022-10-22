@@ -1,5 +1,28 @@
 {
+  "name": "netflix",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel",
+    "bulid": "parcel bulid"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hosam89/NetFlix.git"
+  },
+  "keywords": [],
+  "author": "Hosam Othman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hosam89/NetFlix/issues"
+  },
+  "homepage": "https://github.com/Hosam89/NetFlix#readme",
   "dependencies": {
     "bootstrap": "^5.2.2"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0"
   }
 }
