@@ -8,60 +8,131 @@
     <meta name="author" content="Hosam Othman">
     <title>NetFlix</title>
 
-
+    <!-- // Scss line -->
     <link rel="stylesheet" href="assets/scss/main.scss">
+    <!-- // fontawosome kite -->
+    <script src="https://kit.fontawesome.com/1bf4a50a48.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <!--Nav Bar-->
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">NETFLIX</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+    <div id="wrapper" class="d-flex  flex-column gap-3">
+        <!--Nav Bar-->
+        <div class="navWrapper part">
+            <nav class="navbar ">
+                <div class="container-fluid d-flex justify-content-between">
+                    <a class="navbar-brand" href="#">NETFLIX</a>
+                    <div class="d-flex gap-3">
+                        <div class="select-wraper">
+                            <select name="language" id="lang" class="form-select text-light"
+                                aria-label="Defult select example">
+                                <option value="" selected class="">English</option>
+                                <option value="german">Deutsch</option>
+                            </select>
+                        </div>
+                        <button class="btn signIn text-light btn-lg">Sign In</button>
+                    </div>
+                </div>
+            </nav>
+            <!--Nav end-->
+
+            <div class="welcome d-flex justify-content-center align-items-center flex-column gap-3">
+                <h1 class="text-light ">Unlimited movies, TV shows, and more.</h1>
+                <div class="welcom-text">
+                    <p class="text-light">Wtach more . Cancel anytime</p>
+                    <p class="text-light">Ready to watch? Enter your email to create ot restart your membership </p>
+                </div>
+                <div class="login d-flex justify-content-center align-items-center flex-column gap-5">
+                    <label for="signin"></label>
+                    <input type="emial" placeholder="Email address">
+                    <button class="btn text-light  btn-danger" type="submit">Get Started</button>
+                </div>
             </div>
         </div>
-    </nav>
+        <div class="enjoy part">
+            <div class="enjoyText text-center">
+                <h2 class=" text-light text-center">Enjoy on yur TV.</h2>
+                <p class="text-light fs-1">Wtach on smart TVs, Playstation, Xbox, Cheomecast, Apple TV, Blu-ray
+                    players, and
+                    more.</p>
+            </div>
+            <div class="tv">
+                <img src="./assets/images/tv.png" alt="" style="width:100% ;">
+                <div class="player">
+                    <video muted autoplay loop>
+                        <source
+                            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
+                            type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="download text-light text-center part">
+            <div class="downloadText">
+                <h2>Downlaod your shows to watch offline</h2>
+                <p class="fs-1">Save your favorites easily and always have something to watch</p>
+            </div>
+            <div class="downLoadImages ">
+                <img src="./assets/images/download.jpg" alt="" style="width:100% ;">
+                <div class="downloadAnimation d-flex p-2 gap-2">
+                    <div class="downloadSymple">
+                        <img src="assets/images/download symple.jpg" alt="">
+                    </div>
+                    <div class="expand p-3">
+                        <h3 class="text-light fs-2">Stranger Things</h3>
+                        <p class="text-primary">DownLoading ...</p>
+                    </div>
+                    <div class="loadingImg">
+                        <img src="assets/images/download-icon.gif" alt="">
+                    </div>
 
-
-
-    <!--Nav end-->
-
-
-
+                </div>
+            </div>
+        </div>
+        <div class="kids text-center text-light ">
+            <h3 class="">Creat profiles for Kids.</h3>
+            <p>Send kids on adventures with their favorite characters in a space made just for them—free with your
+                membership.</p>
+            <div class="kidsImage">
+                <img src="assets/images/kids.png" alt="">
+            </div>
+        </div>
+        <div class="asked">
+            <div class="askedText">
+                <h2 class="text-light">Frequantly asked Questions</h2>
+            </div>
+            <div class="questionList col-12">
+                <ul class=" list-group col-12">
+                    <li class="list-group-item w-100"> <button class="btn text-light fs-1">What can I watch on
+                            NetFlix?</button>
+                        <div class="d-none">
+                            <p>NetFlix has an extensive library og frature filmes , TV shows,anime, award-wining Netflix
+                                originals, and more. Watch as much as you want, anytime you want</p>
+                            <p><a href="#">Check out some of our content. </a></p>
+                        </div>
+                    </li>
+                    <li class="list-group-item w-100"> <button class="btn text-light fs-1">What can I watch on
+                            NetFlix?</button>
+                        <div class="answer">
+                            <p>NetFlix has an extensive library og frature filmes , TV shows,anime, award-wining Netflix
+                                originals, and more. Watch as much as you want, anytime you want</p>
+                            <p><a href="#">Check out some of our content. </a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="welcome d-flex justify-content-center align-items-center flex-column gap-3">
+                <div class="welcom-text p-2">
+                    <p class="text-light">Ready to watch? Enter your email to create ot restart your membership </p>
+                </div>
+                <div class="login d-flex justify-content-center align-items-center flex-column gap-5">
+                    <label for="signin"></label>
+                    <input type="emial" placeholder="Email address">
+                    <button class="btn text-light  btn-danger" type="submit">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script type="module" src="assets/js/main.js"></script>
 </body>
 

@@ -1,0 +1,187 @@
+#wrapper{
+    width: 100%;
+    height: 100%;
+    
+  
+.navWrapper{
+    height: 60%;
+    background-image: url(../images/bgmain.png);
+    background-size: 150% 100% ;
+    background-repeat: no-repeat;
+    z-index: 4;
+    padding: .5rem;
+      /* offset-x | offset-y | blur-radius | spread-radius | color */
+      box-shadow: inset 0px 80px 16px -24px rgba(0,0,0,1),
+      inset 0 -103px 119px -5px #000;
+    nav{ 
+
+        height: 10%;
+        div{
+        .navbar-brand {
+                color: $mainCol;
+
+            }
+            .signIn {
+                background-color: $mainCol;
+        
+            }
+            .select-wraper{
+                position: relative;
+                &::before{
+                    position: absolute;
+                    top:8;
+                    left: 5;
+                    content: "\f0ac";
+                    color: white;
+                
+            
+                }
+                &::after{
+                    content: "\f0d7";
+                    position: absolute;
+                    top: 5;
+                    right: 5;
+                    color: white;
+
+                    
+                }
+                select{
+                    height: 3.7rem;
+                    appearance: none;
+                    width: 11rem;
+                    padding-left: 2.5rem;
+                    padding-bottom: 1rem;
+                    
+                }
+            }
+            div{
+                button{
+                    height: 3.7rem;
+                    
+                }
+            }
+
+            
+        
+        }
+    }
+    .welcome {
+        height: 80%;
+        padding-inline: 2rem;
+        padding-top: 4rem;
+        text-align: center;
+        margin-top: 2rem;
+        .welcom-text{
+            height: 40%;   
+        }
+        .login{
+            width: 95%;
+            input{
+                padding: 1rem;
+                width: 100%;
+                height: 4.5rem;
+            }
+        }
+        button{
+            width: 15rem;
+            background-color: $mainCol;
+            height: 5rem;
+     
+            &::after{
+                content: "\f054";
+                
+            }
+            
+        }
+    }
+   }
+   .enjoy{
+    background-color: black;
+    padding: 2rem;
+    .tv{
+        position: relative;
+        .player{
+            
+            position: absolute;
+            top: 51;
+            left: 44;
+            video{
+                width: 233px;
+                z-index: -2;
+            }
+        }
+    }
+   }
+   .download{
+    background-color: #000;
+    padding-block: 4rem;
+    padding-inline: 2rem;
+
+    .downLoadImages{
+        position: relative;
+        .downloadAnimation{
+            background-color: black;
+            position: absolute;
+            bottom: 5;
+            left: 19;
+            width: 90%;
+            border-radius: 12px;
+            border: 3px  #272727 solid;
+        img{
+            width: 40px;
+            height: 60px;
+        }
+        .expand{
+            flex-grow: 2;
+            text-align: start;
+            line-height: .7rem;
+           
+        }
+     
+    }
+    }
+   }
+   .kids{
+    background-color: black;
+    padding-block: 3rem;
+
+   
+    .kidsImage{
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+   }
+   .asked{
+    padding-block: 2rem;
+    background-color: black;
+    .askedText{
+        text-align: center;
+    }
+    .questionList{
+        ul{
+            
+            li{
+                background-color: #222222;
+                margin-top: .5rem;
+                .answer{
+                    display: none;
+                }
+                button{
+                    width: 100%;
+                    text-align: left;
+                    position: relative;
+                    &::after{
+                        content: "\2b";
+                        font-family: fontAwesome ,sans-serif;
+                        position: absolute;
+                        right: 10;
+                    }
+                }
+            }
+        }
+    }
+   }
+   
+}

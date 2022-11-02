@@ -1,0 +1,103 @@
+nav{
+    background: transparent;
+    div{
+        .navbar-brand {
+            font-family:  $logoFont;
+            font-size: $medium;
+
+        }
+        .select-wraper{
+            &::before{
+                font-family: 'fontAwesome' , sans-serif;
+                font-size: 1.5rem;
+                
+            }
+            &::after{
+                font-family: 'fontAwesome' , sans-serif;
+                font-size: 1.5rem;
+            }
+            select{
+               
+                background: transparent;
+                font-family: $logoFont;
+                font-size:$small ;
+              
+            }
+        }
+    }
+}
+
+.welcome{
+    font-family: $mainFont;
+
+    h1{
+        font-size: 2.8rem;
+    }
+    .welcom-text{
+        font-size: 3rem;
+        font-weight: 500;
+    }
+    .login{
+        
+        input{
+            font-size: $small;
+        }
+        button{
+            font-family: $mainFont ;
+            font-size: 2rem;
+            font-weight: 300;
+            position: relative;
+            &::after{
+                content: "\f054";
+                font-family: FontAwesome , sans-serif;
+                font-size: 1.5rem;
+                position: absolute;
+                right: 5;
+                top: 15;
+            }
+        }
+    }
+}
+
+.enjoy{
+
+    .enjoyText{
+        h2{
+            font-size: 3rem;
+            
+        }
+        p{
+            font-size: 3rem;
+        }
+    }
+   }
+
+.download{
+    h2{
+        font-size: 2.5rem;
+    }
+    .downloadAnimation{
+        p{
+            font-size: 1.3rem;
+        }
+    }
+}   
+
+.kids{
+    h3{
+        font-size : 3rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+}
+
+.asked{
+    h2{
+        font-size: 3rem;
+    }
+    ul{
+        font-size: 3rem;
+    }
+
+}

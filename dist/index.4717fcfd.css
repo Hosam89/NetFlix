@@ -1,3 +1,272 @@
+@import "https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap";
+nav {
+  background: none;
+}
+
+nav div .navbar-brand {
+  font-family: Bebas Neue, cursive;
+  font-size: 4rem;
+}
+
+nav div .select-wraper:before, nav div .select-wraper:after {
+  font-family: fontAwesome, sans-serif;
+  font-size: 1.5rem;
+}
+
+nav div .select-wraper select {
+  background: none;
+  font-family: Bebas Neue, cursive;
+  font-size: 2rem;
+}
+
+.welcome {
+  font-family: Roboto, sans-serif;
+}
+
+.welcome h1, .welcome .h1 {
+  font-size: 2.8rem;
+}
+
+.welcome .welcom-text {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.welcome .login input {
+  font-size: 2rem;
+}
+
+.welcome .login button {
+  font-family: Roboto, sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  position: relative;
+}
+
+.welcome .login button:after {
+  content: "";
+  font-family: FontAwesome, sans-serif;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 15px;
+  right: 5px;
+}
+
+.enjoy .enjoyText h2, .enjoy .enjoyText .h2, .enjoy .enjoyText p {
+  font-size: 3rem;
+}
+
+.download h2, .download .h2 {
+  font-size: 2.5rem;
+}
+
+.download .downloadAnimation p {
+  font-size: 1.3rem;
+}
+
+.kids h3, .kids .h3 {
+  font-size: 3rem;
+}
+
+.kids p {
+  font-size: 1.5rem;
+}
+
+.asked h2, .asked .h2, .asked ul {
+  font-size: 3rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+#wrapper .navWrapper {
+  height: 60%;
+  z-index: 4;
+  background-image: url("bgmain.ffb27c10.png");
+  background-repeat: no-repeat;
+  background-size: 150% 100%;
+  padding: .5rem;
+  box-shadow: inset 0 80px 16px -24px #000, inset 0 -103px 119px -5px #000;
+}
+
+#wrapper .navWrapper nav {
+  height: 10%;
+}
+
+#wrapper .navWrapper nav div .navbar-brand {
+  color: #e50914;
+}
+
+#wrapper .navWrapper nav div .signIn {
+  background-color: #e50914;
+}
+
+#wrapper .navWrapper nav div .select-wraper {
+  position: relative;
+}
+
+#wrapper .navWrapper nav div .select-wraper:before {
+  content: "";
+  color: #fff;
+  position: absolute;
+  top: 8px;
+  left: 5px;
+}
+
+#wrapper .navWrapper nav div .select-wraper:after {
+  content: "";
+  color: #fff;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+#wrapper .navWrapper nav div .select-wraper select {
+  height: 3.7rem;
+  appearance: none;
+  width: 11rem;
+  padding-bottom: 1rem;
+  padding-left: 2.5rem;
+}
+
+#wrapper .navWrapper nav div div button {
+  height: 3.7rem;
+}
+
+#wrapper .navWrapper .welcome {
+  height: 80%;
+  padding-inline: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 4rem;
+}
+
+#wrapper .navWrapper .welcome .welcom-text {
+  height: 40%;
+}
+
+#wrapper .navWrapper .welcome .login {
+  width: 95%;
+}
+
+#wrapper .navWrapper .welcome .login input {
+  width: 100%;
+  height: 4.5rem;
+  padding: 1rem;
+}
+
+#wrapper .navWrapper .welcome button {
+  width: 15rem;
+  height: 5rem;
+  background-color: #e50914;
+}
+
+#wrapper .navWrapper .welcome button:after {
+  content: "";
+}
+
+#wrapper .enjoy {
+  background-color: #000;
+  padding: 2rem;
+}
+
+#wrapper .enjoy .tv {
+  position: relative;
+}
+
+#wrapper .enjoy .tv .player {
+  position: absolute;
+  top: 51px;
+  left: 44px;
+}
+
+#wrapper .enjoy .tv .player video {
+  width: 233px;
+  z-index: -2;
+}
+
+#wrapper .download {
+  background-color: #000;
+  padding-block: 4rem;
+  padding-inline: 2rem;
+}
+
+#wrapper .download .downLoadImages {
+  position: relative;
+}
+
+#wrapper .download .downLoadImages .downloadAnimation {
+  width: 90%;
+  background-color: #000;
+  border: 3px solid #272727;
+  border-radius: 12px;
+  position: absolute;
+  bottom: 5px;
+  left: 19px;
+}
+
+#wrapper .download .downLoadImages .downloadAnimation img {
+  width: 40px;
+  height: 60px;
+}
+
+#wrapper .download .downLoadImages .downloadAnimation .expand {
+  text-align: start;
+  flex-grow: 2;
+  line-height: .7rem;
+}
+
+#wrapper .kids {
+  background-color: #000;
+  padding-block: 3rem;
+}
+
+#wrapper .kids .kidsImage img {
+  width: 100%;
+  height: 100%;
+}
+
+#wrapper .asked {
+  background-color: #000;
+  padding-block: 2rem;
+}
+
+#wrapper .asked .askedText {
+  text-align: center;
+}
+
+#wrapper .asked .questionList ul li {
+  background-color: #222;
+  margin-top: .5rem;
+}
+
+#wrapper .asked .questionList ul li .answer {
+  display: none;
+}
+
+#wrapper .asked .questionList ul li button {
+  width: 100%;
+  text-align: left;
+  position: relative;
+}
+
+#wrapper .asked .questionList ul li button:after {
+  content: "+";
+  font-family: fontAwesome, sans-serif;
+  position: absolute;
+  right: 10px;
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -12003,6 +12272,11 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+
+body {
+  height: 100vh;
+  background-color: #222;
 }
 
 /*# sourceMappingURL=index.4717fcfd.css.map */

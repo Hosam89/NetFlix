@@ -1,15 +1,33 @@
-
+//bootstrap icons
 
 //Include the Variables to the main file
 @import "./abstracts/variables";
-// Include functions first (so you can manipulate colors, SVGs, calc, etc)
-@import "~bootstrap/scss/functions";
-//Include remainder of required Bootstrap stylesheets
+
+// fonst for the Project.
+@import '../fonts/fonts' ;
+// Include functions first (so you can manipulate colors, SVGs, calc, etc).
+
+@import "../../../node_modules/bootstrap/scss/functions";
+//Include remainder of required Bootstrap stylesheets.
 @import "~bootstrap/scss/variables";
-//Include remainder of required parts
+//Include remainder of required parts.
 @import "~bootstrap/scss/mixins";
 
-// include the typography to the main file 
+
+
+
+// include the typography to the main file. 
 @import "./abstracts/typography";
+// inculde the mian layout of the project.
+
+@import 'reset';
+@import 'navBar';
+@import 'layout';
 
 @import "~bootstrap/scss/bootstrap";
+// @import "../../../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
+
+body{
+    height: 100vh;
+    background-color: #222222;
+}
